@@ -174,14 +174,14 @@
 				imagesLoaded: true,
 				autoPlay: 4500,
 				pauseAutoPlayOnHover: true,
-				arrowShape: arrowStyle,
+				arrowShape: "M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z",
 				initialIndex: 0,
 				friction: 1,
 				selectedAttraction: 1,
-				prevNextButtons: false,
+				prevNextButtons: !checkSm(),
 				draggable: false,
 				wrapAround: true,
-				pageDots: true,
+				pageDots: checkSm(),
 				contain: false,
 				percentPosition: true,
 				cellSelector: 'figure',
@@ -208,6 +208,49 @@
 	      bnrCarousel.flickity( 'select', index );
 	    });
 		}
+		$(".bnr-carousel .carousel-items").append("<div class='container container-arrows'></div>").find(".container-arrows").append($(".bnr-carousel .carousel-items .flickity-prev-next-button"))
+		
+
+		$('.short-trip-carousel .carousel-items').flickity({
+      imagesLoaded: true,
+      autoPlay: 3000,
+      freeScroll: false,
+      pauseAutoPlayOnHover: true,
+      arrowShape: "M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z",
+      initialIndex: 1,
+      prevNextButtons: true,
+      draggable: false,
+      adaptiveHeight: true, 
+      wrapAround: false,
+      pageDots: false,
+      contain: false,
+      percentPosition: true,
+      cellAlign: 'center'
+    });
+
+  	$('.short-reviews-carousel .carousel-items').flickity({
+      imagesLoaded: true,
+      autoPlay: 3000,
+      freeScroll: false,
+      pauseAutoPlayOnHover: true,
+      arrowShape: "M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z",
+      initialIndex: 1,
+      prevNextButtons: true,
+      draggable: false,
+      adaptiveHeight: true, 
+      wrapAround: false,
+      pageDots: false,
+      contain: false,
+      percentPosition: true,
+      cellAlign: 'center'
+    });
+  	
+
+
+
+
+
+
     //short-partners-carousel
     if ($(".short-partners-carousel .carousel-items figure").length > 8 || checkSm())
       $('.short-partners-carousel .carousel-items').flickity({
@@ -243,7 +286,7 @@
         percentPosition: true,
         cellAlign: 'center'
       });
-    
+    	
 
 
 
