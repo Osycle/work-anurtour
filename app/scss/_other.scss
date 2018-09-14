@@ -224,7 +224,14 @@
 				top: 0px;
 			}
 		}
-		@media ( min-width: 991px ){
+		@media (max-width: 991px) {
+			background-color: $color-1;
+			border-color: $color-1;
+			.arrow{
+				fill: white;
+			}
+		}
+		@media ( min-width: 992px ){
 			&.previous{
 				left: -20px;
 			}
@@ -232,7 +239,7 @@
 				right: -20px;
 			}
 		}
-		@media ( min-width: 1199px ){
+		@media ( min-width: 1200px ){
 			&.previous{
 				left: -40px;
 			}
@@ -255,19 +262,17 @@
 .flickity-btn-2{
 	.flickity-prev-next-button{
 		background: transparent;
-		width: 150px;
-    height: 100px;
+		width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 3px solid $color-4;
     .arrow{
-    	fill: $color-gray-2;
+    	fill: $color-4;
+    }
+    svg{
+    	transform: scale(0.7);
+    }
 
-    }
-    &.next{
-    	@media ( min-width:991px ){
-    		svg{
-      		margin-top: -45px;
-    		}
-    	}
-    }
 	}
 }
 .flickity-page-dots{

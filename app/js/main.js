@@ -228,7 +228,7 @@
       cellAlign: 'center'
     });
 
-  	$('.short-reviews-carousel .carousel-items').flickity({
+  	$('.short-guide-carousel .carousel-items').flickity({
       imagesLoaded: true,
       autoPlay: 3000,
       freeScroll: false,
@@ -244,11 +244,43 @@
       percentPosition: true,
       cellAlign: 'center'
     });
-  	
+  
+    $('.galleryvideo-carousel .carousel-items').map(function(i, el) {
+      var fct = $(el).flickity({
+        imagesLoaded: true,
+        autoPlay: false,
+        pauseAutoPlayOnHover: true,
+        lazyLoad: true,
+        arrowShape: arrowStyle,
+        setGallerySize: true,
+        initialIndex: 1,
+        prevNextButtons: true,
+        draggable: false,
+        resize: false,
+        wrapAround: false,
+        pageDots: false,
+        contain: false,
+        percentPosition: true,
+        cellAlign: 'center'
+      })
+    })
 
-
-
-
+      $('.short-reviews-carousel .carousel-items').flickity({
+        imagesLoaded: true,
+        autoPlay: 3000,
+        freeScroll: false,
+        pauseAutoPlayOnHover: true,
+        arrowShape: arrowStyle,
+        initialIndex: 0,
+        prevNextButtons: true,
+        draggable: false,
+        adaptiveHeight: true, 
+        wrapAround: false,
+        pageDots: true,
+        contain: true,
+        percentPosition: true,
+        cellAlign: 'center'
+      });
 
 
     //short-partners-carousel
@@ -270,22 +302,7 @@
         cellAlign: 'center'
       });
 
-      $('.short-reviews-carousel .carousel-items').flickity({
-        imagesLoaded: true,
-        autoPlay: 3000,
-        freeScroll: false,
-        pauseAutoPlayOnHover: true,
-        arrowShape: "m 1.3327437,24.333332 -5.896e-4,-1 L 56.332744,23.67244 111.33333,24.011547 132,24.375497 152.66667,24.739447 77,25.036389 1.3333333,25.333332 Z M 2.8835156,22.259639 4,21.555958 19,12.973716 34,4.3914751 37,2.8154925 40,1.2395099 V 1.8531451 2.4667804 L 23.043055,12.23339 6.0861081,21.999999 2.3634916,24.156386 1.3321541,23.333332 Z",
-        initialIndex: 0,
-        prevNextButtons: true,
-        draggable: false,
-        adaptiveHeight: true, 
-        wrapAround: false,
-        pageDots: false,
-        contain: true,
-        percentPosition: true,
-        cellAlign: 'center'
-      });
+
     	
 
 
