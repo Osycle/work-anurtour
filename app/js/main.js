@@ -272,7 +272,7 @@
         pauseAutoPlayOnHover: true,
         arrowShape: arrowStyle,
         initialIndex: 0,
-        prevNextButtons: true,
+        prevNextButtons: false,
         draggable: false,
         adaptiveHeight: true, 
         wrapAround: false,

@@ -442,9 +442,11 @@ table {
 			vertical-align: top;
 		}
 			
-		@include img-auto-adaptive();
-		img:not([width]){
-			width: 100%;
+		.img-content{
+			@include img-auto-adaptive();
+			img:not([width]){
+				width: 100%;
+			}
 		}
 	}		
 }
@@ -845,7 +847,7 @@ body{
 	//color: white;
 	//height: auto;
 	background-color: white;
-	background-image: url('../img/bg/bg-body.jpg');
+	//background-image: url('../img/bg/bg-body.jpg');
 	background-repeat: repeat-y;
 	//background-size: cover;
 }
@@ -983,6 +985,7 @@ h1{
 h2{
 	font-size: em(24, 15);
 	margin-bottom: 15px;
+	font-weight: 500;
 	@media (max-width: 430px) {
 		font-size: em(25/1.2, 15);
 	}

@@ -112,7 +112,7 @@ gulp.task('clear', () =>
 )
 
 // WATCHING
-gulp.task('watch', ['browser-sync', 'cssnano', 'scripts'], () =>
+gulp.task('watch', ['browser-sync', 'scripts'], () =>
 	{
 		setTimeout(function() {
 			gulp.watch(app+'/scss/**/*.+(scss|sass)', ['sass']);
