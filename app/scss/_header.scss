@@ -62,7 +62,7 @@ $header-min-menu: 70px;
 
 .header-hidden{
 	//position: relative;
-	height: 180px;
+	height: 170px;
 	background-color: transparent;
 	transition: height 0.3s ease-in-out 0.4s;
 	display: none;
@@ -71,7 +71,14 @@ $header-min-menu: 70px;
 		display: block;
 	}
 }
-
+.header-offset{
+	.img{
+		height: 170px;
+		width: 100%;
+		background-position: center;
+		background-size: cover;
+	}
+}
 .header-top{
 	//background-color: $color-3;	
 	//position: fixed;
@@ -143,6 +150,22 @@ $header-min-menu: 70px;
 	ul{
 		padding: 5px 5px;
 		border: 1px solid $color-gray_2;
+	}
+	a{
+		transition: all 0.3s ease;
+	}
+	li{
+		&.active{
+			a{
+				color: $color-1;
+			}
+		}
+		
+		&:hover{
+			a{
+				color: $color-3;
+			}
+		}
 	}
 }
 .header-lang{

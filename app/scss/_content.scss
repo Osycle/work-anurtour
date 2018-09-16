@@ -777,8 +777,14 @@
 }
 .contacts-info{
 	margin-top: 30px;
+	text-align: left;
 }
 .contacts-feedback{
+	form{
+		*:not(h5){
+			color: $color-5;
+		}
+	}
 	input, textarea{
 		border: 1px solid rgba($color-gray-2, 0.5);
 		border-radius: 2px;
@@ -796,7 +802,7 @@
 			font-weight: 600;
 			font-size: 1.25em;
 			text-transform: uppercase;
-			padding: 17px 85px;
+			padding: 17px 70px;
 		}
 	}
 }
@@ -928,5 +934,41 @@
 		font-size: 1.25em;
 		text-transform: uppercase;
 		padding: 17px 85px;
+	}
+}
+
+
+
+//ziyarattour-article
+.ziyarattour-article{
+	.article-img-content{
+		.img{
+			width: 100%;
+			background-size: contain;
+			background-position: center;
+			height: 330px;
+		}
+	}
+	.img-items{
+		.img{
+			height: 168px;
+			background-position: center;
+			background-size: cover;
+			transition: all 0.3s ease;
+			box-shadow: 0 3px 20px -4px black;
+			&:hover{
+				transform: scale(0.9);
+			}
+		}
+
+	}
+}
+
+//blog
+.blog{
+	.short-blog-items{
+		.desc-content{
+			min-height: 200px;
+		}
 	}
 }

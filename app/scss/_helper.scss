@@ -730,17 +730,13 @@ html{
 
 
 
-img[align="right"], img[align="left"], figure[align="right"], figure[align="left"]{
-	&:first-child{
-		margin-top: 0;
-	}
-}
+
 img[align="right"], figure[align="right"]{
-	margin: 15px 0 15px 15px;
+	margin: 10px 0 15px 15px;
 	float: right; 
 }
 img[align="left"], figure[align="left"]{
-	margin: 15px 15px 15px 0;
+	margin: 10px 15px 15px 0;
 	float:left;
 }
 [underline]{
