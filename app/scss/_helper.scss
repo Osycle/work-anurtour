@@ -296,6 +296,12 @@ html{
 		text-align: center;
 		display: block;
 	}
+	@media (max-width: 991px) {
+		.align-items-center{
+			flex-direction: column;
+			height: auto;
+		}
+	}
 }
 .align-items-end{
 	align-items: flex-end;

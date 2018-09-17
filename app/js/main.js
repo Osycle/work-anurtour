@@ -411,12 +411,12 @@
 		$(window).on("scroll", function(e) {
 
 			//Адаптация хедера при скролинге
-			if ($(window).scrollTop() > 180 && headerRange == false) {
+			if ($(window).scrollTop() > 150 && headerRange == false) {
 
 				headerRange = true;
 				if (minMenu) minMenu.addClass("scrolled").addClass("down");
 
-			} else if ($(window).scrollTop() < 300 && headerRange == true) {
+			} else if ($(window).scrollTop() < 275 && headerRange == true) {
 				headerRange = !true;
 				if (minMenu) minMenu.removeClass("scrolled");
 			} //.originalEvent.wheelDelta
