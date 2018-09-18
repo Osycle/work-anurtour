@@ -9048,10 +9048,12 @@ textarea.form-control {
 .footer-logo img {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  -webkit-filter: drop-shadow(0px 0px 3px transparent);
+  filter: drop-shadow(0px 0px 3px transparent); }
   .footer-logo img:hover {
-    -webkit-filter: drop-shadow(0px -15px 0px rgba(247, 171, 57, 0.2)) drop-shadow(0px 15px 0px rgba(250, 210, 51, 0.2));
-    filter: drop-shadow(0px -15px 0px rgba(247, 171, 57, 0.2)) drop-shadow(0px 15px 0px rgba(250, 210, 51, 0.2)); }
+    -webkit-filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.8)); }
 
 /* 
 		_other.scss
