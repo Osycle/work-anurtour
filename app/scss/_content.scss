@@ -195,16 +195,18 @@
 .short-trip-carousel{
   position: relative;
   z-index: 1;
+  .short-trip-items{
+  	figure{
+			margin-top: 35px;
+			margin-bottom: 70px;
+			position: relative;
+			//width: 100%;
+		}
+  }
 }
 .short-trip-items{
 	.flickity-slider{
 		//padding: 100px 0;
-	}
-	figure{
-		margin-top: 35px;
-		margin-bottom: 70px;
-		position: relative;
-		//width: 100%;
 	}
 	h1{
 		color: white;
@@ -1025,4 +1027,61 @@
 			}
 		}
 	}
+}
+
+
+
+
+
+
+.ziyarat{
+	.ziyarat-gallery-items{
+		figure{
+			padding-left: 15px;
+			padding-right: 15px;
+			width: (100/3)+%;
+		}
+		.img{
+			height: 200px;
+		}
+	}
+}
+.ziyarat-table{
+	thead{
+		background-color: $color-1;
+		color: white;
+		font-size: 1.2em;
+	}
+	tbody{
+		background-color: #fef6d5;
+		tr{
+			display: flex;
+			width: 100%;
+			td{
+				padding: 10px 10px;
+				width: 100%;
+			}
+		}
+	}
+}
+.ziyarat-tabs{
+}
+.tab-list{
+	a{
+		display: block;
+		padding: 15px 20px;
+	}
+	@extend .letter-none;
+	li{
+		//border: 1px solid black;
+		display: inline-block;
+		&.active{
+			background-color: $color-1;
+			color: white;
+		}
+	}
+}
+.tab-content{
+	margin-top: 30px;
+	margin-bottom: 30px;
 }

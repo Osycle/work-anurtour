@@ -223,11 +223,26 @@
       adaptiveHeight: true, 
       wrapAround: false,
       pageDots: false,
-      contain: false,
+      contain: true,
       percentPosition: true,
       cellAlign: 'center'
     });
-
+		$('.ziyarat-carousel .carousel-items').flickity({
+      imagesLoaded: true,
+      autoPlay: 3000,
+      freeScroll: false,
+      pauseAutoPlayOnHover: true,
+      arrowShape: "M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z",
+      initialIndex: 0,
+      prevNextButtons: true,
+      draggable: false,
+      adaptiveHeight: true, 
+      wrapAround: false,
+      pageDots: false,
+      contain: true,
+      percentPosition: true,
+      cellAlign: 'center'
+    });
   	$('.short-guide-carousel .carousel-items').flickity({
       imagesLoaded: true,
       autoPlay: 3000,
@@ -396,7 +411,6 @@
 					percentPosition: true
 				});
 			}
-
 		}
 
 
@@ -415,7 +429,7 @@
 				headerRange = true;
 				if (minMenu) minMenu.addClass("scrolled").addClass("down");
 
-			} else if ($(window).scrollTop() < 275 && headerRange == true) {
+			} else if ($(window).scrollTop() < 150 && headerRange == true) {
 				headerRange = !true;
 				if (minMenu) minMenu.removeClass("scrolled");
 			} //.originalEvent.wheelDelta

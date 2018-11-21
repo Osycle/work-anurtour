@@ -6642,15 +6642,6 @@ table {
     padding: 15px 10px;
     border: 1px solid rgba(178, 178, 178, 0.3);
     vertical-align: middle; }
-  table tbody td:nth-child(1) {
-    border-left: 0;
-    font-weight: 600; }
-    @media (max-width: 991px) {
-      table tbody td:nth-child(1) {
-        min-width: 240px; } }
-  table tbody td:nth-child(2) {
-    border-right: 0;
-    color: #757575; }
   @media (max-width: 991px) {
     table caption {
       text-align: center; }
@@ -8317,11 +8308,10 @@ textarea.form-control {
 .short-trip-carousel {
   position: relative;
   z-index: 1; }
-
-.short-trip-items figure {
-  margin-top: 35px;
-  margin-bottom: 70px;
-  position: relative; }
+  .short-trip-carousel .short-trip-items figure {
+    margin-top: 35px;
+    margin-bottom: 70px;
+    position: relative; }
 
 .short-trip-items h1, .short-trip-items .short-places .entry-header ul, .short-places .entry-header .short-trip-items ul {
   color: white; }
@@ -8995,6 +8985,45 @@ textarea.form-control {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%; } }
+
+.ziyarat .ziyarat-gallery-items figure {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 33.33333%; }
+
+.ziyarat .ziyarat-gallery-items .img {
+  height: 200px; }
+
+.ziyarat-table thead {
+  background-color: #f7ab39;
+  color: white;
+  font-size: 1.2em; }
+
+.ziyarat-table tbody {
+  background-color: #fef6d5; }
+  .ziyarat-table tbody tr {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+    .ziyarat-table tbody tr td {
+      padding: 10px 10px;
+      width: 100%; }
+
+.tab-list a {
+  display: block;
+  padding: 15px 20px; }
+
+.tab-list li {
+  display: inline-block; }
+  .tab-list li.active {
+    background-color: #f7ab39;
+    color: white; }
+
+.tab-content {
+  margin-top: 30px;
+  margin-bottom: 30px; }
 
 /* 
 		_footer.scss
@@ -12102,9 +12131,9 @@ img[auto] {
     width: 100%;
     max-width: 100%; } }
 
-.letter-none, .menu ul:not([class*="sub-menu"]) {
+.letter-none, .menu ul:not([class*="sub-menu"]), .tab-list {
   letter-spacing: -6px; }
-  .letter-none *, .menu ul:not([class*="sub-menu"]) * {
+  .letter-none *, .menu ul:not([class*="sub-menu"]) *, .tab-list * {
     letter-spacing: 0; }
 
 .img-auto-adaptive .img-content img:not(.boxes-ignore) {
