@@ -5,7 +5,11 @@
 .entry-header{
 	@extend .parag-gray;
 }
-
+.text-content{
+	@media (max-width: 991px) {
+		text-align: justify;
+	}
+}
 
 //--bnr-slider
 .bnr-slider{
@@ -622,7 +626,9 @@
 			}
 		}
 	}
-
+	@media (max-width: 991px) {
+		font-size: 0.9em;
+	}
 }
 
 /////////////////////////////////////////
@@ -1034,7 +1040,7 @@
 
 
 
-.ziyarat{
+.ziyarat-article{
 	.ziyarat-gallery-items{
 		figure{
 			padding-left: 15px;
@@ -1043,7 +1049,32 @@
 		}
 		.img{
 			height: 200px;
+			background-position: center;
+			background-size: cover;
 		}
+		@media (max-width: 991px) {
+			figure{
+				width: (100/1)+%;	
+			}
+			.img{
+				//height: 150px;
+			}
+		}
+	}
+}
+.ziyarat-carousel{
+	.flickity-btn-1 .flickity-prev-next-button.next{
+		right: 0;
+	}
+	.flickity-btn-1 .flickity-prev-next-button.previous{
+		left: 0;
+	}
+	.flickity-btn-1 .flickity-prev-next-button{
+		background-color: #f7ab39;
+    border-color: #f7ab39;
+    .arrow{
+    	fill: white;
+    }
 	}
 }
 .ziyarat-table{
@@ -1065,23 +1096,84 @@
 	}
 }
 .ziyarat-tabs{
-}
-.tab-list{
-	a{
-		display: block;
-		padding: 15px 20px;
+	.tab-list{
+		a{
+			display: block;
+			padding: 15px 20px;
+		}
+		@extend .letter-none;
+		li{
+			//border: 1px solid black;
+			display: inline-block;
+			&.active{
+				background-color: $color-1;
+				color: white;
+			}
+		}
 	}
-	@extend .letter-none;
-	li{
-		//border: 1px solid black;
-		display: inline-block;
-		&.active{
-			background-color: $color-1;
-			color: white;
+	.tab-content{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+}
+.links-bar{
+
+	.links-item{
+		border: 1px solid $color-2;
+		color: rgba(black, 0.7);
+		transition: all 0.3s ease;
+		&:nth-child(1) ~ .links-item{
+			border-top: 0;
+		}
+		&:hover{
+			color: black;
+		}
+		li{
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		.cap-content{
+			background-color: #fef6d5;
+			h5{
+				text-align: center;
+				padding: 15px 10px;
+				margin: 0;
+			}
+		}
+		.links-content{
+			font-size: 0.95em;
+			a{
+				&:hover{
+					text-decoration: underline;
+				}
+			}
 		}
 	}
 }
-.tab-content{
-	margin-top: 30px;
-	margin-bottom: 30px;
+
+
+.bookit-form{
+	color: $color-gray-2;
+	h5{
+		color: black;
+	}
+	input.form-control{
+		height: 25px;	
+	}
+	input, textarea{
+		font-size: 0.9em;
+	}
+	textarea{
+		height: 100px;
+	}
+	p{
+		line-height: 25px;
+	}
+	.btn-def{
+		button{
+			text-transform: uppercase;
+			color: black;
+			font-weight: 600;
+		}
+	}
 }

@@ -25,7 +25,11 @@
 		}
 	}
 }
-
+.footer-menu{
+	@media (max-width: 991px) {
+		display: none;
+	}
+}
 .dev{
 	font-size: 0.9em;
 }

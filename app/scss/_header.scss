@@ -519,19 +519,7 @@ ul[class*="sub"]{
 	}
 }
 
-.form-control{
-	border-radius: 10px;
-	&:focus, &:active, &{
-		box-shadow: none;
-	}
-	resize: none;
-	border-width: 0px;
-	background-color: $color-gray-3;
-	border-color: rgba($color-1, 0.3);
-}
-textarea.form-control{
-	height: 150px;
-}
+
 
 
 
