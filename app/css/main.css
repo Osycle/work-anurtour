@@ -6813,14 +6813,14 @@ table {
   border-radius: 15px;
   border: 1px solid #757575; }
 
-.fuller, .claf, [data-flicker]:before, .h1-style:not(.h-clear):not(.after-not):after, .h-style-1:after, .h-style-1:before, .checkbox-style-1:before, .menu li a:before, .menu li a:after, #signin-modal .moses:before, #signin-modal .moses:after, .short-trip .link-content a:before, .short-guide-carousel .flickity-viewport:before, .short-places .entry-header ul li:not(:last-child):before, .fancybox-bg:before, .fancybox-bg:after, .fancybox-is-open .fancybox-bg:before, .fancybox-is-open .fancybox-bg:after, .cell-hover, .hover-content .cell-hover {
+.fuller, .claf, [data-flicker]:before, .h1-style:not(.h-clear):not(.after-not):after, .h-style-1:after, .h-style-1:before, .checkbox-style-1:before, .menu li a:before, .menu li a:after, #signin-modal .moses:before, #signin-modal .moses:after, .short-trip .link-content a:before, .short-guide .flickity-slider:before, .short-guide-carousel .flickity-viewport:before, .short-places .entry-header ul li:not(:last-child):before, .fancybox-bg:before, .fancybox-bg:after, .fancybox-is-open .fancybox-bg:before, .fancybox-is-open .fancybox-bg:after, .cell-hover, .hover-content .cell-hover {
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0; }
 
-.claf, [data-flicker]:before, .h1-style:not(.h-clear):not(.after-not):after, .h-style-1:after, .h-style-1:before, .checkbox-style-1:before, .menu li a:before, .menu li a:after, #signin-modal .moses:before, #signin-modal .moses:after, .short-trip .link-content a:before, .short-guide-carousel .flickity-viewport:before, .short-places .entry-header ul li:not(:last-child):before, .fancybox-bg:before, .fancybox-bg:after, .fancybox-is-open .fancybox-bg:before, .fancybox-is-open .fancybox-bg:after {
+.claf, [data-flicker]:before, .h1-style:not(.h-clear):not(.after-not):after, .h-style-1:after, .h-style-1:before, .checkbox-style-1:before, .menu li a:before, .menu li a:after, #signin-modal .moses:before, #signin-modal .moses:after, .short-trip .link-content a:before, .short-guide .flickity-slider:before, .short-guide-carousel .flickity-viewport:before, .short-places .entry-header ul li:not(:last-child):before, .fancybox-bg:before, .fancybox-bg:after, .fancybox-is-open .fancybox-bg:before, .fancybox-is-open .fancybox-bg:after {
   content: ""; }
 
 .clafclear {
@@ -8385,10 +8385,17 @@ ul[class*="sub"] {
     background-size: contain;
     height: 140px; }
 
+.short-guide .flickity-slider:before {
+  border: 4px solid #f7ab39;
+  top: 18%;
+  width: 60%;
+  height: 60%; }
+
 .short-guide figure .img {
   -webkit-background-size: contain;
   background-size: contain;
-  height: 800px; }
+  height: 500px;
+  background-position: center; }
 
 .short-guide h3 {
   text-transform: uppercase;
@@ -8402,16 +8409,16 @@ ul[class*="sub"] {
 
 .short-guide .desc-content {
   opacity: 0;
-  -webkit-transform: skewX(10deg) translateX(-150px);
-  -ms-transform: skewX(10deg) translateX(-150px);
-  transform: skewX(10deg) translateX(-150px);
+  -webkit-transform: skewX(10deg) translate(-50px, 50%);
+  -ms-transform: skewX(10deg) translate(-50px, 50%);
+  transform: skewX(10deg) translate(-50px, 50%);
   -webkit-transition: all 1.1s ease 0.3s;
   -o-transition: all 1.1s ease 0.3s;
   transition: all 1.1s ease 0.3s;
   width: 500px;
   padding: 30px 45px;
   color: white;
-  top: 390px;
+  top: 50%;
   font-size: 1.1em;
   right: 0;
   background-color: #fe841f;
@@ -8431,6 +8438,9 @@ ul[class*="sub"] {
   -o-transition: all 0.8s ease 0.2s, filter 0.3s steps(30) 0.3s;
   transition: all 0.8s ease 0.2s, filter 0.3s steps(30) 0.3s;
   transition: all 0.8s ease 0.2s, filter 0.3s steps(30) 0.3s, -webkit-filter 0.3s steps(30) 0.3s; }
+  @media (min-width: 991px) {
+    .short-guide .img-content {
+      width: 70%; } }
 
 .short-guide .cap-content {
   opacity: 0;
@@ -8449,11 +8459,16 @@ ul[class*="sub"] {
   -webkit-filter: none;
   filter: none; }
 
+.short-guide .is-selected .desc-content {
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%); }
+
 @media (min-width: 992px) {
   .short-guide .desc-content, .short-guide .cap-content {
     position: absolute; }
   .short-guide .cap-content {
-    top: 20%;
+    top: 0%;
     left: 70%; } }
 
 @media (max-width: 991px) {
