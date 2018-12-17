@@ -287,13 +287,16 @@
 
 //.short-guide
 .short-guide{
-	.flickity-slider{
+	figure{
+		position: relative;
 		&:before{
 			@extend .claf;
 	    border: 4px solid #f7ab39;
-	    top: 18%;
+	    z-index: -1;
+	    top: 50%;
+	    transform: translateY(-50%);
 	    width: 60%;
-	    height: 60%;
+	    height: 80%;
 		}
 	}
 	figure{
@@ -377,6 +380,7 @@
 }
 .short-guide-carousel{
 	position: relative;
+	z-index: 1;
 	.flickity-viewport{
 			&:before{
 				@extend .claf;
